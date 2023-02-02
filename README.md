@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# E-commerce with Fake API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tujuan saya membuat ini hanya untuk melatih dalam memahami seluruh pelajaran yang saya pelajari dan yang melihat repo ini mohon kasih saran dan kritik dalam web ini selain design
 
-## Available Scripts
+## Fitur
 
-In the project directory, you can run:
+- Auth(Login ,Logout ,Register)
+- Menggunakan metode CRUD
+- Menampilkan product yang dipilih user
+- Menampilkan product yang di buat user
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React JS
+- Redux
+- Axios
+- json-server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run Project
 
-### `npm test`
+Clone the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  git clone https://link-to-project
+```
 
-### `npm run build`
+Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm start
+```
 
-### `npm run eject`
+Start the databese
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  json-server -w db.json -p 3004
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Databese local
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Disini saya telah menyiapkan databese local yang sudah saya siapkan di dalam folder , berikut databese local :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+{
+  "cart": [
+    {
+      "barang": "barang",
+      "harga": 10000,
+      "user": "Syahroni",
+      "img": "https://random.imagecdn.app/500/150",
+      "id": 1
+    }
+  ],
+  "keranjang": [
+    {
+      "id": 26,
+      "Syahroni": [
+        {
+          "id": 1,
+          "barang": "barang",
+          "price": 10000,
+          "harga": 10000,
+          "item": 1,
+          "user": "Syahroni",
+          "takebarang": "Syahroni",
+          "img": "https://random.imagecdn.app/500/150"
+        }
+      ]
+    }
+  ],
+  "profile": [
+    {
+      "name": "Syahroni",
+      "password": "123456",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "name": "Roni",
+      "password": "1234456",
+      "role": "guest",
+      "id": 3
+    }
+  ]
+}
+```
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[@Syahroni](https://github.com/BangOns)

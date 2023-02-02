@@ -1,0 +1,42 @@
+{
+  "cart": [
+    {
+      "barang": "barang",
+      "harga": 10000,
+      "user": "Syahroni",
+      "img": "https://random.imagecdn.app/500/150",
+      "id": 1
+    }
+  ],
+  "keranjang": [
+    {
+      "id": 26,
+      "Syahroni": [
+        {
+          "id": 1,
+          "barang": "barang",
+          "price": 10000,
+          "harga": 10000,
+          "item": 1,
+          "user": "Syahroni",
+          "takebarang": "Syahroni",
+          "img": "https://random.imagecdn.app/500/150"
+        }
+      ]
+    }
+  ],
+  "profile": [
+    {
+      "name": "Syahroni",
+      "password": "123456",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "name": "Roni",
+      "password": "1234456",
+      "role": "guest",
+      "id": 3
+    }
+  ]
+}
