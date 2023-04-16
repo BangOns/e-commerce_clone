@@ -13,6 +13,7 @@ Tujuan saya membuat ini hanya untuk melatih dalam memahami seluruh pelajaran yan
 
 - React JS
 - Redux
+- Redux Thunk
 - Axios
 - json-server
 
@@ -59,7 +60,7 @@ Disini saya telah menyiapkan databese local yang sudah saya siapkan di dalam fol
   ],
   "keranjang": [
     {
-      "id": 26,
+      "id": 1,
       "Syahroni": [
         {
           "id": 1,
